@@ -141,9 +141,9 @@ Private Sub cmdCalculate_Click()
         rate = CDbl(txtRate.Text) ' Convert rate to number
         time = CDbl(txtTime.Text) ' Convert time to number
 
-        ' Check if time period is at least 3 years
-        If time < 3 Then
-            MsgBox "Please enter a time period of at least 3 years."
+        ' Check if time period is at least 5 years
+        If time < 5 Then
+            MsgBox "Please enter a time period of at least 5 years."
             Exit Sub
             ElseIf time > 100 Then
             
