@@ -117,7 +117,7 @@ When Users click the Calculate button, the inputs are validated and if it's corr
 ## IMPLEMENTATION
 
 <strong>CODE STARTS HERE! </strong>
-```
+```vb6
 Private Sub Form_Load()
 
     ' Set default values for Textboxes
@@ -192,12 +192,14 @@ CODE ENDS HERE.
 
 When valid inputs  are provided and the application is run, the user receives a message that displays the future amount of their investment based on the Principal, the Rate as well as the Time.   
 
-For Instance: If a user inputs a principal of $1000, at a rate of 5%, and a time period of 9 years, the application will display approximately $1, 551.33.
+<b>For Instance: </b>
+If a user inputs a principal of $1000, at a rate of 5%, and a time period of 9 years, the application will display approximately $1, 551.33.
 
  
 <strong>Error Handling:</strong>
+
 If the user enters a wrong input, or a Time less than 5  years or greater than 100 years, the right error message will display to guide them to  input appropriate Numeric format.
 This application serves as an effective tool to calculate future interest,provide validation to ensure users enter valid numeric inputs only, greatly enhancing user experience on the application.
 
 
-![🔝 ](#interest-rate-converter)
+![🔝Top ](#interest-rate-converter)
