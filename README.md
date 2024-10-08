@@ -1,6 +1,8 @@
 # Interest rate converter
 
 This is a Visual Basic  6 program that convert temperature, it acccepts user inputs in Fahrenheit and provide a corresponding output in Celsius.
+
+
 ![live-preview](https://github.com/marveeygoodlife/Interest-rate-converter/blob/main/images/Screenshot%202024-10-08%20173641.png)
 
  ## Table of Contents
