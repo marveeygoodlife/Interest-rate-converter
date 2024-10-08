@@ -13,6 +13,7 @@ This is a Visual Basic  6 program that convert temperature, it acccepts user inp
 5. [RESULT](#result)
 
 ## Marvellous Ediagbonya
+
 Noun,  
 Abuja  
 07015824775  
@@ -30,24 +31,33 @@ t = Time Involved in years, 0.5 years is calculated as 6 months, etc.
 
 ## PROBLEM STATEMENT
 
-The goal of this practical Project is to develop a simple application that calculates the future amount of an investment by using compound Interest . Users will enter the Amount(Principal), interest rate and time in years.The application will validate the Inputs to make sure the year is not less than 5 years and not greater than 100 years. If the input is valid the application will calculate with the exercise 1 formula: A=P(1+nr​)nt
+The goal of this practical Project is to develop a simple application that calculates the future amount of an investment by using compound Interest . Users will enter the Amount(Principal), interest rate and time in years.The application will validate the Inputs to make sure the year is not less than 5 years and not greater than 100 years. 
 
-## PROBLEM SPECIFICATION 
-Inputs:  
-Principal (Double)  
-Interest Rate (Double)  
-Time (Double, it must be between 5 and 100 years)  
-Outputs  
-Final amount displayed in currency form.  
-A prompt response for users  to try another Value.   
- Validation Rules:   
+If the input is valid the application will calculate with the exercise 1 formula:
 
+<strong> A = P (1+n / r​)nt </strong>
 
-Every input entered must be in numeric format.  
-Time must be 5 years at least and not more than 100 years.  
-Formula  
+## PROBLEM SPECIFICATION
+
+<strong>Inputs: </strong>
+- Principal Amount (Double)  
+- Interest Rate (Double)  
+- Time (Double, it must be between 5 and 100 years)
   
-Hint: 𝐴 = 𝑃 (1 + 𝑟 / 𝑛 ) 𝑛t  
+<strong>Outputs:</strong>
+
+- Final amount displayed in currency form.  
+- A prompt response for users  to try another Value.
+  
+<strong>Validation Rules:</strong>   
+
+
+- Every input entered must be in numeric format.  
+- Time must be 5 years at least and not more than 100 years.  
+
+<strong>Formula:  </strong>
+  
+<strong> Hint: 𝐴 = 𝑃 (1 + 𝑟 / 𝑛 ) 𝑛t   </strong>
 Where:  
 P is the principal/ initial amount to invest  
 A is the total amount expected  
@@ -59,38 +69,45 @@ t is the time in years.
 ## ANALYSIS
 
 The application must provide user-friendly interactiveness while performing its basic function of calculating the Interest or Loan. It should smoothly handle invalid user inputs through Validation check and provide informative messages to the user.
-The flow of data involves accepting user inputs, validating user inputs, calculating using the formula provided on the exercise and providing an accurate response in currency.
+
+The flow of data involves  
+- Accepting user inputs 
+- Validating user inputs
+- Calculating using the formula provided on the exercise
+-  providing an accurate response in currency.
 
 ## DESIGN
 
-Design:   
+<strong>User Interface:</strong>  
+
 The application will be designed using the following formats  
 User Interface:   
-Labels for Principal, Rate and Time and the Output.  
-Textboxes to accept user inputs  
-A command buttons to calculate  
-A command  button to clear input fields and Label as well  
+- Labels for Principal, Rate and Time and the Output.  
+- Textboxes to accept user inputs  
+- A command buttons to calculate  
+- A command  button to clear input fields and Label as well  
 
- Logic:     
-Accepts user inputs  
-Validation inputs to make sure it's the only number entered as inputs.  
-Calculation logic (It uses the formula to calculate ).  
-Result is displayed in a label.  
+<strong>Logic:</strong>
 
-Flowchart:           
+- Accepts user inputs  
+- Validation inputs to make sure it's the only number entered as inputs.  
+- Calculation logic (It uses the formula to calculate ).  
+- Result is displayed in a label.  
+
+Flowchart: 
+
 ![FlowChart](url)
-IMPLEMENTATION:  of code in VB6 :  
+
+  
 
 
-User Interface:  
-
-
+- User Interface:  
 The user input values into the text boxes values for Principal, Rate and Time.  
-Code Execution:  
-When Users click the Calculate button, the formula is applied using the provided inputs.  
+- Code Execution:  
+When Users click the Calculate button, the inputs are validated and if it's correct the formula is applied using the provided formula.    
  The output is calculated and displayed in the label.  
 
-Full sample of code  
+## IMPLEMENTATION
 
 CODE STARTS HERE!  
 ```
@@ -104,7 +121,7 @@ Private Sub Form_Load()
     ' Set a default message in the Output Label (optional)
     lblOutput.Caption = "Please enter values and click Calculate."
 End Sub ```
-```
+
 Private Sub cmdCalculate_Click()
     ' Declare variables for the inputs
     Dim principal As Double
@@ -133,8 +150,6 @@ Private Sub cmdCalculate_Click()
 MsgBox "Please enter a time period of no more than 100 years."
 Exit Sub
  End If
-
-
         ' Calculate the interest rate in decimal
         r = rate / 100
 
@@ -149,8 +164,6 @@ Exit Sub
         MsgBox "Please enter valid numbers for Principal, Rate, and Time."
     End If
 End Sub
-```
-```
 Private Sub cmdClear_Click()
 
     ' Clear all the input textboxes
