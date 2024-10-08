@@ -192,7 +192,8 @@ CODE ENDS HERE.
 
 When valid inputs  are provided and the application is run, the user receives a message that displays the future amount of their investment based on the Principal, the Rate as well as the Time.   
 
-<b>For Instance: </b>
+<b>For Instance: </b>  
+
 If a user inputs a principal of $1000, at a rate of 5%, and a time period of 9 years, the application will display approximately $1, 551.33.
 
  
@@ -202,4 +203,4 @@ If the user enters a wrong input, or a Time less than 5  years or greater than 1
 This application serves as an effective tool to calculate future interest,provide validation to ensure users enter valid numeric inputs only, greatly enhancing user experience on the application.
 
 
-![🔝Top ](#interest-rate-converter)
+![🔝Top ](#table-of-contents)
