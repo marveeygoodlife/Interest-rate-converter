@@ -103,8 +103,8 @@ Private Sub Form_Load()
 
     ' Set a default message in the Output Label (optional)
     lblOutput.Caption = "Please enter values and click Calculate."
-End Sub
-
+End Sub ```
+```
 Private Sub cmdCalculate_Click()
     ' Declare variables for the inputs
     Dim principal As Double
@@ -116,20 +116,17 @@ Private Sub cmdCalculate_Click()
     ' Input validation: To check if the inputs are numeric
 
 
-    If IsNumeric(txtPrincipal.Text) And IsNumeric(txtRate.Text) And 
-     
-
-      
-Continuation of Code 🔻
+    If IsNumeric(txtPrincipal.Text) And IsNumeric(txtRate.Text) And  
+' Continuation of Code 🔻
        IsNumeric(txtTime.Text) Then
   ' Get user inputs
         principal = CDbl(txtPrincipal.Text) ' Convert input text to a number
         rate = CDbl(txtRate.Text) ' Convert rate to number
         time = CDbl(txtTime.Text) ' Convert time to number
 
-        ' Check if time period is at least 5 years
-        If time < 5 Then
-            MsgBox "Please enter a time period of at least 5 years."
+        ' Check if time period is at least 3 years
+        If time < 3 Then
+            MsgBox "Please enter a time period of at least 3 years."
             Exit Sub
             ElseIf time > 100 Then
             
@@ -152,7 +149,8 @@ Exit Sub
         MsgBox "Please enter valid numbers for Principal, Rate, and Time."
     End If
 End Sub
-
+```
+```
 Private Sub cmdClear_Click()
 
     ' Clear all the input textboxes
