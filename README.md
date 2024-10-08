@@ -1,6 +1,7 @@
 # Interest rate converter
 
 This is a Visual Basic  6 program that convert temperature, it acccepts user inputs in Fahrenheit and provide a corresponding output in Celsius.
+![live-preview](https://github.com/marveeygoodlife/Interest-rate-converter/blob/main/images/Screenshot%202024-10-08%20173641.png)
 
  ## Table of Contents
 
@@ -68,13 +69,14 @@ t is the time in years.
 
 ## ANALYSIS
 
-The application must provide user-friendly interactiveness while performing its basic function of calculating the Interest or Loan. It should smoothly handle invalid user inputs through Validation check and provide informative messages to the user.
+The application must provide user-friendly interactiveness while performing its basic function of calculating the Interest or Loan. 
+It should smoothly handle invalid user inputs through Validation check and provide informative messages to the user.
 
 The flow of data involves  
 - Accepting user inputs 
 - Validating user inputs
 - Calculating using the formula provided on the exercise
--  providing an accurate response in currency.
+- providing an accurate response in currency.
 
 ## DESIGN
 
@@ -94,22 +96,25 @@ User Interface:
 - Calculation logic (It uses the formula to calculate ).  
 - Result is displayed in a label.  
 
-Flowchart: 
+<b>Flowchart: </b>
 
 ![FlowChart](https://github.com/marveeygoodlife/Interest-rate-converter/blob/main/images/Copy%20of%20Project%20proposal.jpg)
 
+  <b> A simple flowchart Algorithm</b>
+
+
+- User Interface:
   
-
-
-- User Interface:  
-The user input values into the text boxes values for Principal, Rate and Time.  
-- Code Execution:  
+The user input values into the text boxes values for Principal, Rate and Time.
+ 
+- Code Execution:
+  
 When Users click the Calculate button, the inputs are validated and if it's correct the formula is applied using the provided formula.    
- The output is calculated and displayed in the label.  
+- The output is calculated and displayed in the label.  
 
 ## IMPLEMENTATION
 
-CODE STARTS HERE!  
+<strong>CODE STARTS HERE! </strong>
 ```
 Private Sub Form_Load()
 
@@ -184,9 +189,13 @@ CODE ENDS HERE.
 ## RESULT
 
 When valid inputs  are provided and the application is run, the user receives a message that displays the future amount of their investment based on the Principal, the Rate as well as the Time.   
+
 For Instance: If a user inputs a principal of $1000, at a rate of 5%, and a time period of 9 years, the application will display approximately $1, 551.33.
 
  
-Error Handling:   
+<strong>Error Handling:</strong>
 If the user enters a wrong input, or a Time less than 5  years or greater than 100 years, the right error message will display to guide them to  input appropriate Numeric format.
 This application serves as an effective tool to calculate future interest,provide validation to ensure users enter valid numeric inputs only, greatly enhancing user experience on the application.
+
+
+![🔝 ](#interest-rate-converter)
