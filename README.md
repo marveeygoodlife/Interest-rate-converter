@@ -96,7 +96,7 @@ User Interface:
 
 Flowchart: 
 
-![FlowChart](url)
+![FlowChart](https://github.com/marveeygoodlife/Interest-rate-converter/blob/main/images/Copy%20of%20Project%20proposal.jpg)
 
   
 
